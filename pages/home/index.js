@@ -85,20 +85,20 @@ const HomeView = () => {
         <>
             <MainBanner/>
             <Features/>
-            <section className="services-area bg-f4f6fc ptb-100">
-                <div className="container">
-                    <div className="section-title">
-                        <h2 className="mb-2">
-                            Екосистема. Обединяваме целия ви бизнес
-                        </h2>
-                    </div>
-                </div>
-                {ecosystemContent.map(item => {
-                    return item.id % 2 !== 0
-                        ? <ServiceLeftImageStyle key={item.id} content={item}/>
-                        : <ServiceRightImageStyle key={item.id} content={item}/>
-                })}
-            </section>
+            {/*<section className="services-area bg-f4f6fc ptb-100">*/}
+            {/*    <div className="container">*/}
+            {/*        <div className="section-title">*/}
+            {/*            <h2 className="mb-2">*/}
+            {/*                Екосистема. Обединяваме целия ви бизнес*/}
+            {/*            </h2>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*    {ecosystemContent.map(item => {*/}
+            {/*        return item.id % 2 !== 0*/}
+            {/*            ? <ServiceLeftImageStyle key={item.id} content={item}/>*/}
+            {/*            : <ServiceRightImageStyle key={item.id} content={item}/>*/}
+            {/*    })}*/}
+            {/*</section>*/}
             <FeaturedService/>
             <CompanyIntroVideo/>
             <Subscribe
