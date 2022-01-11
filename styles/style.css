@@ -49,7 +49,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 a {
@@ -796,6 +796,9 @@ Navbar Area CSS
 }
 .main-nav .navbar .navbar-nav .nav-item .mega-dropdown-menu .nav-item a:last-child {
   border-bottom: none !important;
+}
+.main-nav .navbar .nav-item.disabled {
+  cursor: not-allowed;
 }
 .main-nav .navbar .others-options .nav-link {
   display: flex;
@@ -3680,10 +3683,10 @@ Page Title Area CSS
 
 @keyframes animatedBackground {
   0% {
-    background-position: center center;
+    background-position: center 15%;
   }
   100% {
-    background-position: 300px center;
+    background-position: 300px 15%;
   }
 }
 /*================================================
@@ -4857,6 +4860,13 @@ Footer Area CSS
 .single-footer-widget .social li a:hover {
   color: #2b4486;
   background-color: #ffffff;
+}
+
+.footer-item__disable {
+  cursor: not-allowed;
+}
+.footer-item__disable a {
+  pointer-events: none;
 }
 
 .copyright-area {

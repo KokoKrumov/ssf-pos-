@@ -77,12 +77,12 @@ class Header extends Component {
 
                                 <div className={classOne} id="navbarSupportedContent">
                                     <ul className={`navbar-nav`}>
-                                        <li className="nav-item">
+                                        <li className="nav-item disabled">
                                             <Link href="/about-siere" activeClassName="active">
                                                 <a className={`nav-link disabled ${styles.navItemLink__c}`}>За Siere POS</a>
                                             </Link>
                                         </li>
-                                        <li className="nav-item">
+                                        <li className="nav-item disabled">
                                             <Link href="/about-us" activeClassName="active">
                                                 <a className={`nav-link disabled ${styles.navItemLink__c}`}>За нас</a>
                                             </Link>

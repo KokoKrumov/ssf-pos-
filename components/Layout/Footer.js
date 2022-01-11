@@ -49,18 +49,18 @@ class Footer extends Component {
                                 <h3>За Компанията</h3>
 
                                 <ul className="services-list">
-                                    <li>
-                                        <Link href="/about">
-                                            <a>За Siere POS</a>
+                                    <li className={'footer-item__disable'}>
+                                        <Link href="/">
+                                            <a className={'dis'}>За Siere POS</a>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/services">
+                                        <Link href="/">
                                             <a>За нас</a>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/features">
+                                        <Link href="/price">
                                             <a>Цени</a>
                                         </Link>
                                     </li>
@@ -79,16 +79,16 @@ class Footer extends Component {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/contact">
+                                        <Link href="/contact-us">
                                             <a>Изпратете запитване</a>
                                         </Link>
                                     </li>
-                                    <li>
+                                    <li className={'footer-item__disable'}>
                                         <Link href="/privacy-policy">
                                             <a>Privacy Policy</a>
                                         </Link>
                                     </li>
-                                    <li>
+                                    <li className={'footer-item__disable'}>
                                         <Link href="/terms-conditions">
                                             <a>Terms & Conditions</a>
                                         </Link>
@@ -105,7 +105,7 @@ class Footer extends Component {
                                    <ul className="footer-contact-info">
                                        <li>Място: <span>София, кв. Лозенец N: 30</span></li>
                                        <li>Email: <a href='mailto:hello@sieresoft.com'>hello@sieresoft.com</a></li>
-                                       <li>Phone: <a href='tel:+0984754'>+0 (321) 984 754</a></li>
+                                       <li>Телефон: <a href='tel:+0984754'>+0 (321) 984 754</a></li>
                                    </ul>
                                </address>
                             </div>

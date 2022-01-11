@@ -908,6 +908,9 @@ Navbar Area CSS
                 }
             }
         }
+        .nav-item.disabled {
+            cursor: not-allowed;
+        }
         .others-options {
 
             .nav-link {
@@ -4389,10 +4392,10 @@ Page Title Area CSS
 }
 @keyframes animatedBackground {
 	0% {
-        background-position: center center;
+        background-position: center 15%;
     }
 	100% {
-        background-position: 300px center;
+        background-position: 300px 15%;
     }
 }
 
@@ -5799,6 +5802,15 @@ Footer Area CSS
         }
     }
 }
+
+.footer-item__disable {
+    cursor: not-allowed;
+
+    a {
+        pointer-events: none;
+    }
+}
+
 .copyright-area {
     border-top: 1px solid #acc5db;
     text-align: center;
