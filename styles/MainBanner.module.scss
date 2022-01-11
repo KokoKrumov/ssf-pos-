@@ -1,0 +1,31 @@
+@import "constants.scss";
+
+.digitalAgencyBanner__c {
+    margin-top: 90px;
+}
+
+.digitalAgencyBannerContent__c {
+    margin-left: auto;
+    text-align: right;
+
+}
+
+.digitalAgencyBannerContentMainTitle__c {
+    //color: $optional-color !important;
+}
+
+.defaultBtnIcon {
+    color: inherit !important;
+}
+
+@media only #{screen} and (max-width: 992px) {
+    .digitalAgencyBanner__c {
+        margin-top: 75px;
+    }
+}
+
+@media only #{screen} and (min-width: 1550px) {
+    .digitalAgencyBanner__c {
+        height: 46.5vw;
+    }
+}
