@@ -32,7 +32,7 @@ This files table contents are outlined below>>>>>
 ** - 404 Error Area CSS
 ** - Pagination Area CSS
 ** - Sidebar Widget Area CSS
-** - Login Area CSS
+** - Index Area CSS
 ** - Signup Area CSS
 ** - Features Area CSS
 ** - Free Trial Area CSS
@@ -4844,7 +4844,7 @@ Sidebar Widget Area CSS
 }
 
 /*================================================
-Login Area CSS
+Index Area CSS
 =================================================*/
 .login-image {
     height: 100%;
@@ -4856,7 +4856,7 @@ Login Area CSS
         repeat: no-repeat;
     };
     img {
-        display: none;
+        display: none !important;
     }
 }
 .login-content {
@@ -4866,11 +4866,17 @@ Login Area CSS
         text-align: center;
         max-width: 500px;
         margin: {
-            left: auto;
             right: auto;
+            bottom: 200px;
+            left: auto;
         };
         .logo {
-            margin-bottom: 35px;
+            margin: {
+                right: auto;
+                bottom: 35px;
+                left: auto;
+            }
+            width: 120px;
             
             a {
                 display: inline-block;
@@ -5433,6 +5439,12 @@ Contact Area CSS
     background-color: $white-color;
     box-shadow: 0 10px 35px 5px rgba(137, 173, 255, 0.15);
     padding: 50px 30px;
+}
+
+.login-inner {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
 }
 .contact-features-list {
     padding-right: 15px;

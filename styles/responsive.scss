@@ -782,7 +782,7 @@ $value_nine: 1550px;
         background-image: unset !important;
 
         img {
-            display: inline-block;
+            display: inline-block !important;
         }
     }
     .login-content {
@@ -792,8 +792,9 @@ $value_nine: 1550px;
         .login-form {
             max-width: 100%;
             margin: {
-                left: 0;
                 right: 0;
+                bottom: 0;
+                left: 0;
             };
             .logo {
                 margin-bottom: 25px;
@@ -2440,7 +2441,7 @@ $value_nine: 1550px;
         background-image: unset !important;
 
         img {
-            display: inline-block;
+            display: inline-block !important;
         }
     }
     .login-content {
@@ -2450,6 +2451,7 @@ $value_nine: 1550px;
             bottom: 80px;
         };
         .login-form {
+            margin-bottom: 0;
             .logo {
                 margin-bottom: 30px;
             }

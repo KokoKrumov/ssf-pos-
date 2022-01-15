@@ -667,7 +667,7 @@
     background-image: unset !important;
   }
   .login-image img {
-    display: inline-block;
+    display: inline-block !important;
   }
 
   .login-content {
@@ -676,8 +676,9 @@
   }
   .login-content .login-form {
     max-width: 100%;
-    margin-left: 0;
     margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
   }
   .login-content .login-form .logo {
     margin-bottom: 25px;
@@ -2013,13 +2014,16 @@
     background-image: unset !important;
   }
   .login-image img {
-    display: inline-block;
+    display: inline-block !important;
   }
 
   .login-content {
     height: auto;
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+  .login-content .login-form {
+    margin-bottom: 0;
   }
   .login-content .login-form .logo {
     margin-bottom: 30px;

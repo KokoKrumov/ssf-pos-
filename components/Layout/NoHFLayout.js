@@ -1,7 +1,8 @@
 import React from "react";
 
 
-const Layout = ({children}) => {
+
+const NoHFLayout = ({children}) => {
     return (
         <>
             {children}
@@ -9,4 +10,4 @@ const Layout = ({children}) => {
     )
 }
 
-export default Layout;
+export default NoHFLayout;
