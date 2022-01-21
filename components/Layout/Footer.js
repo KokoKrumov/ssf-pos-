@@ -18,7 +18,7 @@ class Footer extends Component {
                                         <span className='footer-area__footer-logo__text'> Siere POS</span>
                                     </a>
                                 </div>
-                                <p className='footer-area__description'>Всички услуги на Сиере ПОС са направени да бъдат използвани лесно и интуитивно. Сиере ПОС може да бъде използван от малки и големи заведения. Винаги може да махате или слагате допълнителни услуги.</p>
+                                <p className='footer-area__description'>Всички услуги на Сиер ПОС са направени да бъдат използвани лесно и интуитивно. Сиер ПОС може да бъде използван от малки и големи заведения. Винаги може да махате или слагате допълнителни услуги.</p>
                                 <ul className="social">
                                     <li>
                                         <a href="https://www.facebook.com/" target="_blank">
@@ -54,13 +54,13 @@ class Footer extends Component {
                                             <a className={'dis'}>За Siere POS</a>
                                         </Link>
                                     </li>
-                                    <li>
+                                    <li className={'footer-item__disable'}>
                                         <Link href="/">
                                             <a>За нас</a>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/price">
+                                        <Link href="/pricing">
                                             <a>Цени</a>
                                         </Link>
                                     </li>

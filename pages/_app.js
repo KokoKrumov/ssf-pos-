@@ -12,6 +12,7 @@ import Layout from "../components/Layout/Layout";
 import { useRouter } from 'next/router'
 import CustomLayout from "../components/Layout/CustomLayout";
 import NoHFLayout from "../components/Layout/NoHFLayout";
+import CookieConsent from "react-cookie-consent";
 
 const MyApp = ({ Component, pageProps }) => {
 
@@ -68,6 +69,19 @@ const MyApp = ({ Component, pageProps }) => {
     return (
         <Layout>
             {renderLayout()}
+            <CookieConsent
+                buttonText="Приемам"
+                style={{
+                    background: "#217dbb",
+                    alignItems: 'center',
+                    justifyContent: 'center'
+            }}
+                contentStyle={{
+                    flex: 'initial'
+                }}
+                buttonStyle={{ background: "#ff612f", color: "#ffffff", fontSize: "18px" }}
+                debug={false}
+            >Този сайт използва бизквитки (cookies)</CookieConsent>
         </Layout>
 
     );

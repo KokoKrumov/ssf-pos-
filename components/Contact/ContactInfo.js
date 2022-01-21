@@ -16,9 +16,9 @@ class ContactInfo extends Component {
                         </Link>
                         <span className="or">или</span>
 
-                        <Link href="mailto:hello@sieresoft.com">
+                        <Link href="mailto:support@sierepos.com">
                             <a>
-                                <span className="email">hello@sieresoft.com</span>
+                                <span className="email">support@sierepos.com</span>
                             </a>
                         </Link>
                     </h2>

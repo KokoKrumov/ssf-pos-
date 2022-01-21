@@ -14,7 +14,6 @@ class LoginView extends Component {
                                 height="1280"
                                 priority={true}
                             />
-                            {/*<img src="/images/login-bg.jpg" alt="image" />*/}
                         </div>
                     </div>
 
@@ -29,7 +28,6 @@ class LoginView extends Component {
                                                     src="/images/Logo.svg"
                                                     width="120"
                                                     height="120"
-                                                    // priority={true}
                                                 />
                                             </a>
                                         </div>
