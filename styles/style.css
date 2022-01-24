@@ -2563,4 +2563,19 @@ Company Preview Area CSS
   opacity: 0.8;
 }
 
+.list-style__decimal {
+  list-style-type: decimal;
+}
+
+.list-style__upper-roman {
+  list-style-type: upper-roman;
+}
+
+.pp__text-container a {
+  color: #217dbb;
+}
+.pp__text-container a:hover {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=style.css.map */

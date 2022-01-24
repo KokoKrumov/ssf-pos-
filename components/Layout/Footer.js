@@ -83,7 +83,7 @@ class Footer extends Component {
                                             <a>Изпратете запитване</a>
                                         </Link>
                                     </li>
-                                    <li className={'footer-item__disable'}>
+                                    <li>
                                         <Link href="/privacy-policy">
                                             <a>Privacy Policy</a>
                                         </Link>

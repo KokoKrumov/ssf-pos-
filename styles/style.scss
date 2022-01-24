@@ -3071,3 +3071,19 @@ Company Preview Area CSS
     }
 }
 
+.list-style__decimal {
+    list-style-type: decimal;
+}
+
+.list-style__upper-roman {
+    list-style-type: upper-roman;
+}
+
+.pp__text-container {
+    a {
+        color: $main-color;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
