@@ -13,7 +13,7 @@ class Footer extends Component {
                                 <div className="logo">
                                     <a className='footer-area__footer-logo' href="/">
                                         <span className='navbar-brand__logo-wrap'>
-                                            <img src="/images/Logo.svg" alt="logo" />
+                                            <img src="/images/Logo.svg" width={'60px'} height={'60px'} alt="logo" />
                                         </span>
                                         <span className='footer-area__footer-logo__text'> Siere POS</span>
                                     </a>
