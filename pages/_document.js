@@ -19,7 +19,7 @@ class MyDocument extends Document {
                     <link rel="manifest" href="/images/favicon/site.webmanifest"/>
                     <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5"/>
                     {/*preload large image on the initial loads*/}
-                    <link rel="preload" as="image" href="../images/siere-pos/woman_working.jpg" />
+                    <link rel="preload" as="image" href="../images/siere-pos/woman_working.webp" />
                     <meta name="msapplication-TileColor" content="#da532c"/>
                     <meta name="theme-color" content="#ffffff"/>
                 </Head>

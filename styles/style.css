@@ -2458,7 +2458,7 @@ Digital Agency Banner Area CSS
   position: relative;
   padding-top: 420px;
   padding-bottom: 80px;
-  background-image: url(/images/siere-pos/woman_working.jpg);
+  background-image: url(/images/siere-pos/woman_working.webp);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2489,7 +2489,7 @@ Company Preview Area SiereSofit CSS
 .company-preview-area__siere {
   position: relative;
   z-index: 1;
-  background-image: url(/images/bar.jpg);
+  background-image: url(/images/bar.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
