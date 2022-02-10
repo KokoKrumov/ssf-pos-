@@ -588,7 +588,8 @@ Navbar Area CSS
                 position: relative;
                 padding: 0;
 
-                a {
+                .nav-link {
+                    cursor: pointer;
                     font: {
                         size: $font-size;
                         weight: 500;

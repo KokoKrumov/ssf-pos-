@@ -40,7 +40,7 @@ const MyApp = ({ Component, pageProps }) => {
                     description='Pos eco system for everyone.'
                     content='siere, pos, sierepos, saas, пос, Пос, ПОС, поС, Сиере, Сиерепос, СиереПос, Софтуер за заведения, Софтуер заведемия'
                 />
-                <Component {...pageProps}  loading={loading}/>
+                <Component {...pageProps} loading={loading}/>
 
                 {/* Preloader */}
                 <Loader loading={loading} />

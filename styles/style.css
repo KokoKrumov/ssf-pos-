@@ -554,7 +554,8 @@ Navbar Area CSS
   padding: 0;
   /* Mega dropdown menu */
 }
-.main-nav .navbar .navbar-nav .nav-item a {
+.main-nav .navbar .navbar-nav .nav-item .nav-link {
+  cursor: pointer;
   font-size: 16px;
   font-weight: 500;
   color: #4a6f8a;
@@ -565,10 +566,10 @@ Navbar Area CSS
   margin-left: 13px;
   margin-right: 13px;
 }
-.main-nav .navbar .navbar-nav .nav-item a:hover, .main-nav .navbar .navbar-nav .nav-item a:focus, .main-nav .navbar .navbar-nav .nav-item a.active {
+.main-nav .navbar .navbar-nav .nav-item .nav-link:hover, .main-nav .navbar .navbar-nav .nav-item .nav-link:focus, .main-nav .navbar .navbar-nav .nav-item .nav-link.active {
   color: #217dbb;
 }
-.main-nav .navbar .navbar-nav .nav-item a i {
+.main-nav .navbar .navbar-nav .nav-item .nav-link i {
   font-size: 16px;
   position: relative;
   top: 2px;

@@ -1,0 +1,9 @@
+{
+  "locales": ["en", "bg"],
+  "defaultLocale": "bg",
+  "pages": {
+    "*": ["common"],
+    "/about": ["about"],
+    "/": ["home"]
+  }
+}

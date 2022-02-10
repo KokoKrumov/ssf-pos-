@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import MainBanner from '../../components/DigitalMarketing/MainBanner';
 import Features from '../../components/Features/Features';
 import CompanyIntroVideo from '../../components/DigitalMarketing/CompanyIntroVideo';
@@ -6,9 +6,9 @@ import FeaturedService from "../../components/Features/FeaturedService";
 import Subscribe from "../../components/Common/Subscribe";
 import ServiceLeftImageStyle from "../../components/Features/ServiceLeftImageStyle";
 import ServiceRightImageStyle from "../../components/Features/ServiceRightImageStyle";
+import useTranslation from 'next-translate/useTranslation';
 
-const HomeView = () => {
-
+const HomeView = ({children}) => {
     const ecosystemContent = [
         {
             id: '1',
@@ -80,10 +80,11 @@ const HomeView = () => {
             ]
         },
     ]
+    let { t } = useTranslation();
 
     return (
         <>
-            <MainBanner/>
+            <MainBanner t={t}/>
             <Features/>
             <section className="services-area bg-f4f6fc ptb-100">
                 <div className="container">

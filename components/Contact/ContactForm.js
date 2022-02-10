@@ -4,6 +4,7 @@ import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 const MySwal = withReactContent(Swal)
 import baseUrl from '../../utils/baseUrl'
+import {useFormik} from "formik";
 
 const alertContent = () => {
     MySwal.fire({
@@ -49,21 +50,36 @@ const ContactForm = () => {
         }
     };
 
+    const formik = useFormik({
+        initialValues: {
+            name: '',
+            email: '',
+            phone: '',
+            subject: '',
+            text: '',
+        },
+        onSubmit: values => {
+            console.log('values: ', values);
+            alert(JSON.stringify(values, null, 2));
+        },
+    });
+
     return (
         <div className="contact-form">
             <h2>Стартирайте Вашия успех сега</h2>
 
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={formik.handleSubmit}>
                 <div className="row">
                     <div className="col-lg-6 col-md-6">
                         <div className="form-group">
                             <input 
                                 type="text" 
-                                name="name" 
+                                name="name"
+                                id={'name'}
                                 placeholder="Вашето име"
                                 className="form-control"
-                                value={contact.name}
-                                onChange={handleChange} 
+                                onChange={formik.handleChange}
+                                value={formik.values.name}
                                 required 
                             />
                         </div>
@@ -71,12 +87,13 @@ const ContactForm = () => {
                     <div className="col-lg-6 col-md-6">
                         <div className="form-group">
                             <input 
-                                type="text" 
-                                name="email" 
+                                type="email"
+                                name="email"
+                                id={'email'}
                                 placeholder="Вашият Email"
                                 className="form-control"
-                                value={contact.email}
-                                onChange={handleChange} 
+                                onChange={formik.handleChange}
+                                value={formik.values.email}
                                 required 
                             />
                         </div>
@@ -84,12 +101,13 @@ const ContactForm = () => {
                     <div className="col-lg-6 col-md-6">
                         <div className="form-group">
                             <input 
-                                type="text" 
-                                name="number" 
+                                type="tel"
+                                name="phone"
+                                id={'phone'}
                                 placeholder="Телефонен номер"
                                 className="form-control"
-                                value={contact.number}
-                                onChange={handleChange} 
+                                onChange={formik.handleChange}
+                                value={formik.values.phone}
                                 required 
                             />
                         </div>
@@ -98,11 +116,12 @@ const ContactForm = () => {
                         <div className="form-group">
                             <input 
                                 type="text" 
-                                name="subject" 
+                                name="subject"
+                                id={'subject'}
                                 placeholder="Тема"
                                 className="form-control"
-                                value={contact.subject}
-                                onChange={handleChange} 
+                                onChange={formik.handleChange}
+                                value={formik.values.subject}
                                 required 
                             />
                         </div>
@@ -110,13 +129,14 @@ const ContactForm = () => {
                     <div className="col-lg-12 col-md-12">
                         <div className="form-group">
                             <textarea 
-                                name="text" 
+                                name="text"
+                                id={'text'}
                                 cols="30" 
                                 rows="6" 
                                 placeholder="Вашето съобщение..."
                                 className="form-control"
-                                value={contact.text}
-                                onChange={handleChange} 
+                                onChange={formik.handleChange}
+                                value={formik.values.text}
                                 required 
                             />
                         </div>
