@@ -56,7 +56,7 @@ const Header = (props) => {
                             <Link href="/">
                                 <a className="navbar-brand">
                                     <span className="navbar-brand__logo-wrap">
-                                        <img src="/images/Logo.svg" alt="logo" />
+                                        <img src="/images/Logo.svg" width={'60px'} height={'60px'} alt="logo" />
                                     </span>
                                     <span> Siere POS</span>
                                 </a>

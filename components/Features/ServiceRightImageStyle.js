@@ -1,6 +1,7 @@
 import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Link from 'next/link';
+import Image from "next/image";
 
 const ServiceRightImageStyle = ({content}) => {
     const {id, title, image, description, bullets, link} = content;
@@ -33,7 +34,15 @@ const ServiceRightImageStyle = ({content}) => {
                     <div className="services-image">
                         <ScrollAnimation animateIn="fadeInRight" delay={50} animateOnce={true}>
                             <div className="image">
-                                <img className={'img-fw'} src={image} alt="image" />
+                                {/*<img className={'img-fw'} src={image} alt="image" />*/}
+                                <div className={'img-fw'}>
+                                    <Image
+                                        src={image}
+                                        alt="image"
+                                        width={960}
+                                        height={580}
+                                    />
+                                </div>
                             </div>
                         </ScrollAnimation>
                     </div>
